@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             videoModel.setVideo_uri(thumbUri.toString());
             videoModel.setVideo_path(absolutePathThumb);
             videoModel.setVideo_name(fileName);
+            videoModel.setVideo_thumb(cursor.getString(thum));
             if(extension!=null)
             {
                 videoModel.setVideo_extension(extension);

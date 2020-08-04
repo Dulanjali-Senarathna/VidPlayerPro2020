@@ -38,8 +38,9 @@
                 android:layout_weight="1"
                 android:text="Video Name"
                 android:ellipsize="end"
-                android:maxLength="1"
-                android:textColor="@android:color/white">
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp">
 
             </TextView>
 
