@@ -1,4 +1,4 @@
-package com.example.vidplayerpro2020;
+package com.example.vidplayerpro;
 
 import org.junit.Test;
 

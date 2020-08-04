@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.vidplayerpro2020"
+        applicationId "com.example.vidplayerpro"
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
@@ -26,4 +26,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.5.1'
+
 }
