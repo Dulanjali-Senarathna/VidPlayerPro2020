@@ -6,12 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 
+import com.example.vidplayerpro.Activities.VideoPlayerActivity;
 import com.example.vidplayerpro.Models.VideoModel;
 
 import org.apache.commons.io.FilenameUtils;
@@ -119,5 +121,12 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
             return  null;
         }
+        }
+
+        public void openVideoPlayerActivity(VideoModel videoModel)
+        {
+            Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+            intent.putExtra("videoUri",videoModel.getVideo_uri());
+            startActivity(intent);
         }
 }

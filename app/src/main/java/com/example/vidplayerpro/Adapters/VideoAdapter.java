@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.vidplayerpro.MainActivity;
 import com.example.vidplayerpro.Models.VideoModel;
 import com.example.vidplayerpro.R;
 
@@ -57,6 +58,14 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoAdapter
             image = (ImageView)itemView.findViewById(R.id.vid_image);
             name = (TextView)itemView.findViewById(R.id.vid_name);
             duration = (TextView)itemView.findViewById(R.id.vid_duration);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    VideoModel videoModel = arrayListVideos.get(getAdapterPosition());
+                    ((MainActivity)context).openVideoPlayerActivity(videoModel);
+                }
+            });
         }
     }
 }

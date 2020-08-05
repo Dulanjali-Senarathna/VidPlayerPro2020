@@ -1,6 +1,8 @@
 package com.example.vidplayerpro.Models;
 
-public class VideoModel {
+import java.io.Serializable;
+
+public class VideoModel implements Serializable {
 
     public String video_thumb,video_uri,video_path,video_name,video_extension,duration;
 
